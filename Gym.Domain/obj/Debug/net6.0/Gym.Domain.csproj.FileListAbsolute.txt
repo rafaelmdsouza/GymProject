@@ -1,0 +1,12 @@
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\bin\Debug\net6.0\Gym.Domain.deps.json
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\bin\Debug\net6.0\Gym.Domain.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\bin\Debug\net6.0\Gym.Domain.pdb
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.csproj.AssemblyReference.cache
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.AssemblyInfoInputs.cache
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.AssemblyInfo.cs
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.csproj.CoreCompileInputs.cache
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\refint\Gym.Domain.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\Gym.Domain.pdb
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Domain\obj\Debug\net6.0\ref\Gym.Domain.dll

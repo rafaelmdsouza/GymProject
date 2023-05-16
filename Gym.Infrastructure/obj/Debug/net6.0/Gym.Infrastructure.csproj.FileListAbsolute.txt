@@ -1,0 +1,15 @@
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\bin\Debug\net6.0\Gym.Infrastructure.deps.json
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\bin\Debug\net6.0\Gym.Infrastructure.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\bin\Debug\net6.0\Gym.Infrastructure.pdb
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\bin\Debug\net6.0\Gym.Domain.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\bin\Debug\net6.0\Gym.Domain.pdb
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.csproj.AssemblyReference.cache
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.AssemblyInfoInputs.cache
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.AssemblyInfo.cs
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.csproj.CoreCompileInputs.cache
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.csproj.CopyComplete
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\refint\Gym.Infrastructure.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\Gym.Infrastructure.pdb
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.Infrastructure\obj\Debug\net6.0\ref\Gym.Infrastructure.dll
