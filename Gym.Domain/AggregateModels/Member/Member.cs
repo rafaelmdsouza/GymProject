@@ -6,6 +6,7 @@
 
         public Member(string name, int age, string email, GymPlan plan, GymSubscription subscription)
         {
+            Id = Guid.NewGuid();
             Name = name;
             Age = age;
             Email = email;
@@ -30,16 +31,16 @@
         public DateTime LastModified { get; private set; }
         public DateTime SubscriptionExpirationDate { get; private set; }
 
-        public  DateTime CalculateSubscriptionExpirationDate(DateTime registerDate, GymSubscription subscription)
+        public static DateTime CalculateSubscriptionExpirationDate(DateTime registerDate, GymSubscription subscription)
         {
             switch (subscription)
             {
                 case GymSubscription.Monthly:
-                    registerDate.AddDays(30);
+                    registerDate = registerDate.AddMonths(1);
                     break;
 
                 case GymSubscription.Yearly:
-                    registerDate.AddYears(1);
+                    registerDate = registerDate.AddYears(1);
                     break;
 
             }
@@ -61,6 +62,13 @@
             Subscription = subscription;
             LastModified = DateTime.Now;
             SubscriptionExpirationDate = CalculateSubscriptionExpirationDate(LastModified, subscription);
+        }
+        public void Update(string name, int age, string email)
+        {
+            Name = name;
+            Age = age;
+            Email = email;
+            LastModified = DateTime.Now;
         }
         public void Disable()
         {
