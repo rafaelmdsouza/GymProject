@@ -1,6 +1,8 @@
-﻿namespace Gym.Domain.Core.Data
+﻿using Gym.Domain.Core.DomainObject;
+
+namespace Gym.Domain.Core.Data
 {
-    public interface IRepository<T, TKey> where T : class
+    public interface IRepository<T, TKey> where T : IAggregateRoot
     {
         Task<IReadOnlyList<T>> GetAllAsync();
         Task<T> GetByIdAsync(TKey id);

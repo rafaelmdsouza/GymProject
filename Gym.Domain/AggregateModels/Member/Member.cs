@@ -1,6 +1,8 @@
-﻿namespace Gym.Domain.AggregateModels.Member
+﻿using Gym.Domain.Core.DomainObject;
+
+namespace Gym.Domain.AggregateModels.Member
 {
-    public class Member
+    public class Member : IAggregateRoot
     {
         private Member() { }
 

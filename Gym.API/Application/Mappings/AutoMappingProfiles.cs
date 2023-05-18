@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Gym.API.Application.Models.Requests.Member;
+using Gym.API.Application.Models.Response.Member;
 using Gym.Domain.AggregateModels.Member;
 
 namespace Gym.API.Application.Mappings
@@ -8,7 +9,7 @@ namespace Gym.API.Application.Mappings
     {
         public AutoMappingProfiles()
         {
-            CreateMap<Member, MemberRequest>().ReverseMap();
+            CreateMap<Member, MemberResponse>().ReverseMap();
         }
     }
 }
