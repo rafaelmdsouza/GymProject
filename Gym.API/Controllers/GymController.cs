@@ -1,17 +1,17 @@
-﻿using Gym.API.Application.Auth;
-using Gym.API.Application.Commands.MemberCommands;
+﻿using Gym.API.Application.Commands.MemberCommands;
 using Gym.API.Application.Models.Requests.Member;
 using Gym.API.Application.Queries.MembersQueries;
 using Gym.API.Validators;
-using Gym.Domain.AggregateModels.Member;
+using Gym.Infrastructure.Authentication;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Gym.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    [BasicAuth]
     public class GymController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -53,7 +53,7 @@ namespace Gym.API.Controllers
         [Route("members")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> CreateMember (MemberRequest request)
+        public async Task<IActionResult> CreateMember(MemberRequest request)
         {
             var command = new CreateMemberCommand(request.Name, request.Age, request.Email, request.Plan, request.Subscription);
             var validator = _validationRules.Validate(command);
@@ -63,7 +63,7 @@ namespace Gym.API.Controllers
 
             var cmd = await _mediator.Send(command);
 
-            return CreatedAtAction(nameof(GetMemberById), new {cmd.Id}, cmd);
+            return CreatedAtAction(nameof(GetMemberById), new { cmd.Id }, cmd);
         }
         [HttpPut]
         [Route("members/{id}/update")]
@@ -71,7 +71,7 @@ namespace Gym.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Update(Guid id, [FromBody] UpdateRequest request)
         {
-            var command = new UpdateCommand(id,request.Name, request.Age, request.Email);
+            var command = new UpdateCommand(id, request.Name, request.Age, request.Email);
             var cmd = await _mediator.Send(command);
 
             if (cmd == null)
@@ -86,8 +86,8 @@ namespace Gym.API.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> ChangePlan(Guid id, [FromBody] ChangePlanRequest request)
         {
-           var command = new ChangePlanCommand(id, request.Plan);
-           var cmd = await _mediator.Send(command);
+            var command = new ChangePlanCommand(id, request.Plan);
+            var cmd = await _mediator.Send(command);
 
             if (!cmd)
                 return BadRequest();
@@ -99,7 +99,7 @@ namespace Gym.API.Controllers
         [Route("members/{id}/change_subscription")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> ChangeSubscription (Guid id, [FromBody] ChangeSubscriptionRequest request)
+        public async Task<IActionResult> ChangeSubscription(Guid id, [FromBody] ChangeSubscriptionRequest request)
         {
             var command = new ChangeSubscriptionCommand(id, request.Subscription);
 
@@ -107,12 +107,13 @@ namespace Gym.API.Controllers
 
             if (!cmd)
                 return BadRequest();
-            
+
             return Ok();
         }
 
         [HttpPost]
         [Route("members/{id}/disable")]
+        [Authorize(Policy = Permissions.Policy.Admin)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Disable(Guid id)
@@ -129,6 +130,7 @@ namespace Gym.API.Controllers
 
         [HttpPost]
         [Route("members/{id}/enable")]
+        [Authorize(Policy = Permissions.Policy.Admin)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Enable(Guid id)
@@ -138,7 +140,7 @@ namespace Gym.API.Controllers
             var cmd = await _mediator.Send(command);
             if (!cmd)
                 return BadRequest();
-            
+
             return Ok();
         }
     }

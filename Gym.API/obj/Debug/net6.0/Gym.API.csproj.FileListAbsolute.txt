@@ -71,3 +71,10 @@ D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\runtimes\browser\lib\net
 D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\RAFA\PROGRAMAÇÃO\.NET\Gym\Gym.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

@@ -1,10 +1,6 @@
-using AutoMapper;
 using FluentValidation;
-using Gym.API.Application.Mappings;
 using Gym.API.IoC;
 using Gym.API.Validators;
-using Gym.Domain.AggregateModels.Member;
-using Gym.Infrastructure.Repository;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +21,7 @@ app.UseSerilogRequestLogging();
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
